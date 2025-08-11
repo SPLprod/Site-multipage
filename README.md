@@ -6,6 +6,25 @@ Site multipages :
 Vous avez le visuel final mais vous avez possibilité de changer de sujet, de faire un autre design tant que chaque page respecte les notions concernées !
 Travail en binôme donc respect du travail avec Github
 Pensez à réfléchir au sujet du site, du design rapidement, de la répartition des pages avant de vous lancer dans la conception
+
+## Liste de pages à faire
+
+### Leila :
+- Tableaux
+- Texte
+- Listes
+- Images
+- Position
+
+### Ludovic :
+- Acceuil
+- Selecteur
+- Position
+- Liens&Menu
+- Formulaire
+- Multimedia
+- Animation
+
  
 
 ### Fait par Leila & Ludovic
