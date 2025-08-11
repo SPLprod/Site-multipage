@@ -10,21 +10,16 @@ Pensez à réfléchir au sujet du site, du design rapidement, de la répartition
 ## Liste de pages à faire
 
 ### Leila :
-- Tableaux
-- Texte
-- Listes
+- Formulaire
+- Animation
 - Images
 - Position
 
 ### Ludovic :
-- Acceuil
-- Selecteur
-- Position
 - Liens&Menu
-- Formulaire
+- Listes
 - Multimedia
-- Animation
-
+- Tableaux
  
 
 ### Fait par Leila & Ludovic
