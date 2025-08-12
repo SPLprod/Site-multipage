@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Position Multipage</title>
+    <title>Liens & menu Multipage</title>
     <!-- ATTENTION ! Ne pas oublier de creer une copie de acceuil.css pour la nouvelle page -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="Css/position.css">
+    <link rel="stylesheet" href="Css/menu.css">
 </head>
 <body>
 
@@ -21,11 +21,11 @@
             <button class="nbutt"><a href="acceuil.html">Acceuil</a></button>
             <button class="nbutt"><a href="#">Texte</a></button>
             <button class="nbutt"><a href="selecteur.html">Selecteur</a></button>
-            <button class="nbutt"><a href="image.html">Image</a></button>
+            <button class="nbutt"><a href="image.html*">Image</a></button>
             <button class="nbutt"><a href="position.html">Position</a></button>
             <button class="nbutt"><a href="#">Zoning</a></button>
             <button class="nbutt"><a href="tableau.html">Tableau</a></button>
-            <button class="nbutt"><a href="#">Liste</a></button>
+            <button class="nbutt"><a href="liste.html">Liste</a></button>
             <button class="nbutt"><a href="#">Lien & menu</a></button>
             <button class="nbutt"><a href="#">Fromulaire</a></button>
             <button class="nbutt"><a href="#">Multimedia</a></button>
@@ -36,90 +36,69 @@
     <main>
         <section>
             <!-- Modifier le titre de section pour le sujet correspondant -->
-            <h2>Position</h2>
+            <h2>Liens & Menus</h2>
         </section>
 
         <!-- Div block pour intégrer le/les éléments du sujet traité (images, texte, etc...) -->
-        <div class="block">
-            <h3>Centrer un élément</h3>
-            <div class="centrer">Au centre avec margin: auto !</div>
+        <div class="block nav">
+            <button class="nbutt"><a href="#liens">Les liens</a></button>
+            <button class="nbutt"><a href="#menu">Menu</a></button>
+            <button class="nbutt"><a href="">Menu déroulant</a></button>
         </div>
             <!-- Div space pour séparer les blocks -->
         <div class="space"></div>
         
-        <div class="block">
-            <h3>Position ABSOLUTE</h3>
-            <p>Regarde à droite de ta fenêtre</p>
-            <div class="absolute">Je suis là !</div>
+        <div class="block" id="liens">
+            <h3>Les liens</h3>
+            <p>Il faut bien choisir sa <a class="link" href="https://www.palettedecouleur.net/" target="_blank">palette de couleurs</a> lors de la conception d'un site internet!</p>
+            <p>Demandez à <a class="link" href="https://chatgpt.com/" target="_blank">Chat Gpt</a></p>
+            <p><a class="link" href="Img/bitcoin.jpg" download="Bitcoin">Cliquez</a> pour gagner un Bitcoin !</p>
+            <p>Sinon tu peux utiliser <a class="link" href="Img/www_google.pdf" target="_blank">Google</a></p>
+            <p><a class="link" href="#" onclick="window.print()">Imprime la page</a> pour gaspiller de l'encre!</p>
+            <a href="https://www.youtube.com/watch?v=3BFTio5296w&ab_channel=RickAstley-Topic"><img id="logo" src="https://static.vecteezy.com/system/resources/previews/024/983/592/original/youtube-logo-transparent-free-png.png" alt="Youtube"></a>
         </div>
 
         <div class="space"></div>
-        
-        <div class="block">
-            <h3>Position RELATIVE</h3>
-            <div class="relative">
-                <p class="relative2">carré-sception</p>
-            </div>
+
+        <div class="block nav" id="menus">
+            <h3>Les menus</h3>
+            <button class="nbutt">Acceuil</button>
+            <button class="nbutt">Parcours</button>
+            <button class="nbutt">Réalisations</button>
+            <button class="nbutt">Contract</button>
         </div>
 
         <div class="space"></div>
-        
-        <div class="block">
-            <h3>Position FIXED</h3>
-            <p>Regarde à gauche de ta fenêtre</p>
-            <p class="fixed">Fixé !</p>
-        </div>
 
-        <div class="space"></div>
-        
-        <div class="block">
-            <h3>Pourcentage</h3>
-            <div class="percent">33%</div>
-            <div class="percent">66%</div>
-            <div class="percent">100%</div>
-        </div>
+        <div class="block nav" id="menus">
+            <h3>Menu déroulant</h3>
+            <div class="flex">
+                <div class="drop">
+                    <button class="nbutt dropbtn">Acceuil</button>
+                    <div class="dropdown">
+                        <button class="pholder">Lorem</button>
+                        <button class="pholder">Lorem</button>
+                        <button class="pholder">Lorem</button>
+                    </div>
+                </div>
 
-        <div class="space"></div>
-        
-        <div class="block">
-            <h3>Float</h3>
-            <div class="floater">
-                <p class="float">1</p>
-                <p class="float">2</p>
-                <p class="float">3</p>
-                <p class="float">4</p>
-                <p class="float">5</p>
-                <p class="float">6</p>
-                <p class="float">7</p>
-                <p class="float">8</p>
-                <p class="float">9</p>
-                <p class="float">10</p>
-            </div>
-        </div>
+                <div class="drop">
+                    <button class="nbutt dropbtn">Acceuil</button>
+                    <div class="dropdown">
+                        <button class="pholder">Lorem</button>
+                        <button class="pholder">Lorem</button>
+                        <button class="pholder">Lorem</button>
+                    </div>
+                </div>
 
-        <div class="space"></div>
-        
-        <div class="block">
-            <h3>Exercice float</h3>
-            <div class="bfloat"></div>
-            <div class="floats">
-                <div id="col1"></div>
-                <div id="col2"></div>
-                <div id="col3"></div>
-                <div id="col4"></div>
-            </div>
-            <div class="bfloat"></div>
-        </div>
-
-        <div class="space"></div>
-        
-        <div class="block">
-            <h3>Flexbox</h3>
-            <div class="flexer">
-                <p class="flex">1</p>
-                <p class="flex">2</p>
-                <p class="flex">3</p>
-                <p class="flex">4</p>
+                <div class="drop">
+                    <button class="nbutt dropbtn">Acceuil</button>
+                    <div class="dropdown">
+                        <button class="pholder">Lorem</button>
+                        <button class="pholder">Lorem</button>
+                        <button class="pholder">Lorem</button>
+                    </div>
+                </div>
             </div>
         </div>
 

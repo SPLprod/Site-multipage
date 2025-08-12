@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selecteur Multipage</title>
+    <title>Liste Multipage</title>
     <!-- ATTENTION ! Ne pas oublier de creer une copie de acceuil.css pour la nouvelle page -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="Css/selecteur.css">
+    <link rel="stylesheet" href="Css/liste.css">
 </head>
 <body>
 
@@ -20,12 +20,12 @@
         <nav>
             <button class="nbutt"><a href="acceuil.html">Acceuil</a></button>
             <button class="nbutt"><a href="#">Texte</a></button>
-            <button class="nbutt"><a href="#">Selecteur</a></button>
+            <button class="nbutt"><a href="selecteur.html">Selecteur</a></button>
             <button class="nbutt"><a href="image.html">Image</a></button>
             <button class="nbutt"><a href="position.html">Position</a></button>
             <button class="nbutt"><a href="#">Zoning</a></button>
             <button class="nbutt"><a href="tableau.html">Tableau</a></button>
-            <button class="nbutt"><a href="liste.html">Liste</a></button>
+            <button class="nbutt"><a href="#">Liste</a></button>
             <button class="nbutt"><a href="#">Lien & menu</a></button>
             <button class="nbutt"><a href="#">Fromulaire</a></button>
             <button class="nbutt"><a href="#">Multimedia</a></button>
@@ -36,62 +36,68 @@
     <main>
         <section>
             <!-- Modifier le titre de section pour le sujet correspondant -->
-            <h2>Selecteur</h2>
+            <h2>Listes</h2>
         </section>
 
         <!-- Div block pour intégrer le/les éléments du sujet traité (images, texte, etc...) -->
         <div class="block">
-            <h3>Les selecteur dans le css permettent de designer une balise ou une série de balises précises dans le fichier Html</h3>
-            <div class="explanation">
-                <section class="explain">
-                    <h4>[élément]:nth-child()</h4>
-                    <p><strong>nth-child</strong> permet de selectionner une balise enfant depuis sa balise parent <br /><strong>[Exemple] :</strong><br>li:nth-child(even)<br>(le selecteur choisi les balises paires de la balise parent de li)</p>
-                </section>
-                <ul>
-                    <li>Child 1</li>
-                    <li>Child 2</li>
-                    <li>Child 3</li>
-                    <li>Child 4</li>
-                    <li>Child 5</li>
-                </ul>
-            </div>
+            <h3>Listes &lt;ul></h3>
+            <p class="desc"><strong>&lt;ul></strong> est l'acronyme de unordered list (liste non-ordonée)</p>
+            <ul class="listes">
+                <li>plusieurs</li>
+                <li>liste</li>
+                <li>wahou!</li>
+            </ul>
         </div>
             <!-- Div space pour séparer les blocks -->
-        <div class="space"></div>
         
-        <div class="block">
-            <div class="explanation">
-                <section class="explain">
-                    <h4>[élément]:nth-of-type()</h4>
-                    <p><strong>nth-of-type</strong> permet de selectionner une balise parmit la liste de balise du même type <br /><strong>[Exemple] :</strong><br>tr:nth-of-type(odd)<br>(le selecteur choisi les balises impaires de toutes les balises tr)</p>
-                </section>
+        <div class="space"></div>
 
-                <table>
-                    <tbody>
-                        <tr><td>Type tr 1</td></tr>
-                        <tr><td>Type tr 2</td></tr>
-                        <tr><td>Type tr 3</td></tr>
-                        <tr><td>Type tr 4</td></tr>
-                        <tr><td>Type tr 5</td></tr>
-                    </tbody>
-                </table>
-            </div>
+         <div class="block">
+            <h3>Listes &lt;ul> &lt;li></h3>
+            <p class="desc"><strong>&lt;li></strong> est l'acronyme de list, le nombre de &lt;li> correspond au nombre d'éléments dans la liste en question</p>
+
+            <ul>
+                <li>Afrique</li>
+                <li>Amérique</li>
+                <li>Asie</li>
+                <li>Europe</li>
+                <li>Océanie</li>
+            </ul>
         </div>
-            
-        <div class="space"></div>    
 
-        <div class="block">
-            <div class="explanation">
-                <section class="explain">
-                    <h4>id & class</h4>
-                    <p>les atributs de balises <strong>id</strong> & <strong>class</strong> sont utilisé pour désigner spécifiquement une ou plusieurs balises entre le html et le css <br /><strong>[Exemple] :</strong><br /><br><strong>HTML :</strong><br>
-                    <code><pre>&lt;img class="logo" src="Img/black-mesa-logo.png"></pre></code><br>
-                    <p><strong>CSS :</strong></p><code><pre>.logo {width: 15%}</pre></code>
-                    <br><p>(le selecteur choisi les balises impaires de toutes les balises tr)</p>
-                </section>
+        <div class="space"></div>
 
-                <img class="logo" src="Img/black-mesa-logo.png" alt="logo black mesa">
-            </div>
+         <div class="block">
+            <h3>Listes &lt;ol> &lt;li></h3>
+            <p class="desc"><strong>&lt;ol></strong> est l'acronyme de ordered list (liste non-ordonée)</p>
+
+            <ol>
+                <li>Phantom Blood</li>
+                <li>Battle Tendency</li>
+                <li>Stardust Crusader</li>
+                <li>Diamond is Unbreakable</li>
+                <li>Vento Aureo</li>
+                <li>Stone Ocean</li>
+                <li>Steel Ball Run</li>
+                <li>Jojolion</li>
+                <li>Jojoland</li>
+            </ol>
+        </div>
+
+        <div class="space"></div>
+
+         <div class="block">
+            <h3>Listes Descriptive &lt;dl> &lt;dt> &lt;dd></h3>
+            <p class="desc"><strong>&lt;dl></strong> est l'acronyme de description list, <strong>&lt;dt></strong> & <strong>&lt;dd></strong> correspondent au terme (<strong>D</strong>escription <strong>T</strong>erm) et à sa description (<strong>D</strong>escription <strong>D</strong>efinition</p>
+
+            <dl>
+                <dt>HTML</dt>
+                <dd>Hypertext Markup Language</dd>
+
+                <dt>CSS</dt>
+                <dd>Cascading Stylesheet</dd>
+            </dl>
         </div>
 
     </main>

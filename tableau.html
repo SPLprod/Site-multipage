@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Position Multipage</title>
+    <title>Tableau Multipage</title>
     <!-- ATTENTION ! Ne pas oublier de creer une copie de acceuil.css pour la nouvelle page -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="Css/position.css">
+    <link rel="stylesheet" href="Css/tableau.css">
 </head>
 <body>
 
@@ -24,8 +24,8 @@
             <button class="nbutt"><a href="image.html">Image</a></button>
             <button class="nbutt"><a href="position.html">Position</a></button>
             <button class="nbutt"><a href="#">Zoning</a></button>
-            <button class="nbutt"><a href="tableau.html">Tableau</a></button>
-            <button class="nbutt"><a href="#">Liste</a></button>
+            <button class="nbutt"><a href="#">Tableau</a></button>
+            <button class="nbutt"><a href="liste.html">Liste</a></button>
             <button class="nbutt"><a href="#">Lien & menu</a></button>
             <button class="nbutt"><a href="#">Fromulaire</a></button>
             <button class="nbutt"><a href="#">Multimedia</a></button>
@@ -36,93 +36,42 @@
     <main>
         <section>
             <!-- Modifier le titre de section pour le sujet correspondant -->
-            <h2>Position</h2>
+            <h2>Tableau</h2>
         </section>
 
         <!-- Div block pour intégrer le/les éléments du sujet traité (images, texte, etc...) -->
         <div class="block">
-            <h3>Centrer un élément</h3>
-            <div class="centrer">Au centre avec margin: auto !</div>
-        </div>
-            <!-- Div space pour séparer les blocks -->
-        <div class="space"></div>
-        
-        <div class="block">
-            <h3>Position ABSOLUTE</h3>
-            <p>Regarde à droite de ta fenêtre</p>
-            <div class="absolute">Je suis là !</div>
-        </div>
+            <h3>Balises utilisées :</h3>
+            <p class="desc"><strong>&lt;table> &lt;thead> &lt;tbody> &lt;tr> &lt;th> &lt;td></strong></p>
 
-        <div class="space"></div>
-        
-        <div class="block">
-            <h3>Position RELATIVE</h3>
-            <div class="relative">
-                <p class="relative2">carré-sception</p>
-            </div>
-        </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Offense</th>
+                        <th>Defense</th>
+                        <th>Support</th>
+                    </tr>
+                </thead>
 
-        <div class="space"></div>
-        
-        <div class="block">
-            <h3>Position FIXED</h3>
-            <p>Regarde à gauche de ta fenêtre</p>
-            <p class="fixed">Fixé !</p>
+                <tbody>
+                    <tr>
+                        <td>Scout</td>
+                        <td>Demoman</td>
+                        <td>Medic</td>
+                    </tr>
+                    <tr>
+                        <td>Soldier</td>
+                        <td>Heavy</td>
+                        <td>Sniper</td>
+                    </tr>
+                    <tr>
+                        <td>Pyro</td>
+                        <td>Engieneer</td>
+                        <td>Spy</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-
-        <div class="space"></div>
-        
-        <div class="block">
-            <h3>Pourcentage</h3>
-            <div class="percent">33%</div>
-            <div class="percent">66%</div>
-            <div class="percent">100%</div>
-        </div>
-
-        <div class="space"></div>
-        
-        <div class="block">
-            <h3>Float</h3>
-            <div class="floater">
-                <p class="float">1</p>
-                <p class="float">2</p>
-                <p class="float">3</p>
-                <p class="float">4</p>
-                <p class="float">5</p>
-                <p class="float">6</p>
-                <p class="float">7</p>
-                <p class="float">8</p>
-                <p class="float">9</p>
-                <p class="float">10</p>
-            </div>
-        </div>
-
-        <div class="space"></div>
-        
-        <div class="block">
-            <h3>Exercice float</h3>
-            <div class="bfloat"></div>
-            <div class="floats">
-                <div id="col1"></div>
-                <div id="col2"></div>
-                <div id="col3"></div>
-                <div id="col4"></div>
-            </div>
-            <div class="bfloat"></div>
-        </div>
-
-        <div class="space"></div>
-        
-        <div class="block">
-            <h3>Flexbox</h3>
-            <div class="flexer">
-                <p class="flex">1</p>
-                <p class="flex">2</p>
-                <p class="flex">3</p>
-                <p class="flex">4</p>
-            </div>
-        </div>
-
     </main>
     
     <footer>
