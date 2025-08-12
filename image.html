@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selecteur Multipage</title>
+    <title>Image Multipage</title>
     <!-- ATTENTION ! Ne pas oublier de creer une copie de acceuil.css pour la nouvelle page -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="Css/selecteur.css">
+    <link rel="stylesheet" href="Css/image.css">
 </head>
 <body>
 
@@ -20,8 +20,8 @@
         <nav>
             <button class="nbutt"><a href="acceuil.html">Acceuil</a></button>
             <button class="nbutt"><a href="#">Texte</a></button>
-            <button class="nbutt"><a href="#">Selecteur</a></button>
-            <button class="nbutt"><a href="image.html">Image</a></button>
+            <button class="nbutt"><a href="selecteur.html">Selecteur</a></button>
+            <button class="nbutt"><a href="#">Image</a></button>
             <button class="nbutt"><a href="position.html">Position</a></button>
             <button class="nbutt"><a href="#">Zoning</a></button>
             <button class="nbutt"><a href="tableau.html">Tableau</a></button>
@@ -36,61 +36,31 @@
     <main>
         <section>
             <!-- Modifier le titre de section pour le sujet correspondant -->
-            <h2>Selecteur</h2>
+            <h2>Images</h2>
         </section>
 
         <!-- Div block pour intégrer le/les éléments du sujet traité (images, texte, etc...) -->
-        <div class="block">
-            <h3>Les selecteur dans le css permettent de designer une balise ou une série de balises précises dans le fichier Html</h3>
-            <div class="explanation">
-                <section class="explain">
-                    <h4>[élément]:nth-child()</h4>
-                    <p><strong>nth-child</strong> permet de selectionner une balise enfant depuis sa balise parent <br /><strong>[Exemple] :</strong><br>li:nth-child(even)<br>(le selecteur choisi les balises paires de la balise parent de li)</p>
-                </section>
-                <ul>
-                    <li>Child 1</li>
-                    <li>Child 2</li>
-                    <li>Child 3</li>
-                    <li>Child 4</li>
-                    <li>Child 5</li>
-                </ul>
-            </div>
+        <div class="block" id="hero">
+            <h3 id="heroh">Background-image (CSS)</h3>
+            <p id="herop">Le backgroud-image en CSS est une propriété qui permet de changer l'arrière-plan d'une balise ciblé. Background-image est associé avec url(), ce qui permet l'intégration locale & en ligne de tous les fichiers d'image (jpeg, png, gif, etc)</p>
         </div>
             <!-- Div space pour séparer les blocks -->
         <div class="space"></div>
         
         <div class="block">
-            <div class="explanation">
-                <section class="explain">
-                    <h4>[élément]:nth-of-type()</h4>
-                    <p><strong>nth-of-type</strong> permet de selectionner une balise parmit la liste de balise du même type <br /><strong>[Exemple] :</strong><br>tr:nth-of-type(odd)<br>(le selecteur choisi les balises impaires de toutes les balises tr)</p>
-                </section>
+            <h3>Image dans le HTML</h3>
 
-                <table>
-                    <tbody>
-                        <tr><td>Type tr 1</td></tr>
-                        <tr><td>Type tr 2</td></tr>
-                        <tr><td>Type tr 3</td></tr>
-                        <tr><td>Type tr 4</td></tr>
-                        <tr><td>Type tr 5</td></tr>
-                    </tbody>
-                </table>
-            </div>
+            <img id="imghtml" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExanQ3ZHE1a2Izbms4ZG5qZDhqYWdicmlmbms1ODBnZmhwMDhyeTZpMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/yv1mFZ8I5jC0dXzqeU/giphy.gif" alt="Gif de gameboy avec gameplay Tetris">
         </div>
-            
-        <div class="space"></div>    
+        
+        <div class="space"></div>
 
         <div class="block">
-            <div class="explanation">
-                <section class="explain">
-                    <h4>id & class</h4>
-                    <p>les atributs de balises <strong>id</strong> & <strong>class</strong> sont utilisé pour désigner spécifiquement une ou plusieurs balises entre le html et le css <br /><strong>[Exemple] :</strong><br /><br><strong>HTML :</strong><br>
-                    <code><pre>&lt;img class="logo" src="Img/black-mesa-logo.png"></pre></code><br>
-                    <p><strong>CSS :</strong></p><code><pre>.logo {width: 15%}</pre></code>
-                    <br><p>(le selecteur choisi les balises impaires de toutes les balises tr)</p>
-                </section>
-
-                <img class="logo" src="Img/black-mesa-logo.png" alt="logo black mesa">
+            <h3>Images en HTML/CSS</h3>
+            <div id="imgs">
+                <img class="imgcss" id="img1" src="Img/polaroid.jpg" alt="Polaroid">
+                <img class="imgcss" id="img2" src="Img/polaroid.jpg" alt="Polaroid">
+                <img class="imgcss" id="img3" src="Img/polaroid.jpg" alt="Polaroid">
             </div>
         </div>
 
