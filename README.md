@@ -12,14 +12,14 @@ Pensez à réfléchir au sujet du site, du design rapidement, de la répartition
 ### Leila :
 - Formulaire
 - Animation
-- Images
+- Multimedia
 - Position
 
 ### Ludovic :
 - Liens&Menu
 - Listes
-- Multimedia
 - Tableaux
+- Images
  
 
 ### Fait par Leila & Ludovic
